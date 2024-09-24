@@ -6,25 +6,30 @@ import React, { useState, useEffect } from "react";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 ">
+    <div className="py-12 ">
       <div className="container">
-        <div className="flex flex-row items-center justify-between w-full h-screen">
-          {/* Left Section - Moving Text */}
-          <div className="flex flex-col justify-center items-center w-1/2 h-full">
+
+        {/* {Section for Image and Intro Text} */}
+        <div className="flex flex-row justify-between items-center w-full h-auto py-20">
+          {/* Left Section - Moving Text and Additional Text */}
+          <div className="w-3/5 pr-10">
             <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
               <div>✨</div>
-              <div className="text-sm font-medium">
+              <div className="text-lg font-medium">
                 <TextTypeEffect />
               </div>
               <div>✨</div>
             </div>
+            <p className="mt-4 text-sm">
+            Hello! I&rsquo;m Ayush H, a passionate computer science student specializing in Full Stack Development and open-source projects. With a strong foundation in programming and a knack for problem-solving, I enjoy creating innovative solutions and collaborating on exciting projects. Welcome to my portfolio!
+            </p>
           </div>
 
           {/* Right Section - Static Image */}
-          <div className="flex justify-center items-center w-1/2 h-full">
+          <div className="flex justify-center items-center w-3/5">
             <Image
               src={memojiImage}
-              className="w-[500px]" // Set a specific width to avoid resizing issues
+              className="w-[600px] h-auto" // Adjust width for better size control
               alt="Person peeking from behind laptop"
             />
           </div>
