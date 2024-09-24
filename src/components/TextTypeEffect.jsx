@@ -6,7 +6,7 @@ const TypingEffect = () => {
     const words = [
         "Fullstack Developer",
         "Competitive Programmer",
-        "Problem Solver",
+        "Innovative Solutions Architect",
         "Tech Enthusiast",
     ];
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
