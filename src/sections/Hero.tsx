@@ -1,4 +1,4 @@
-import memojiImage from "@/assets/images/img.png";
+import MyPic from "@/assets/images/img.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import TextTypeEffect from "../components/TextTypeEffect";
@@ -15,12 +15,10 @@ export const HeroSection = () => {
           <div className="w-3/5 pr-10">
             <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
               <div>✨</div>
-              <div className="text-lg font-medium">
-                <TextTypeEffect />
-              </div>
+              <TextTypeEffect />
               <div>✨</div>
             </div>
-            <p className="mt-4 text-sm">
+            <p className="mt-4 text-base text-white leading-relaxed">
             Hello! I&rsquo;m Ayush H, a passionate computer science student specializing in Full Stack Development and open-source projects. With a strong foundation in programming and a knack for problem-solving, I enjoy creating innovative solutions and collaborating on exciting projects. Welcome to my portfolio!
             </p>
           </div>
@@ -28,7 +26,7 @@ export const HeroSection = () => {
           {/* Right Section - Static Image */}
           <div className="flex justify-center items-center w-3/5">
             <Image
-              src={memojiImage}
+              src={MyPic}
               className="w-[600px] h-auto" // Adjust width for better size control
               alt="Person peeking from behind laptop"
             />

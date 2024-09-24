@@ -47,7 +47,7 @@ const TypingEffect = () => {
     }, [displayText, isDeleting, typingSpeed, currentWordIndex, words]);
 
     return (
-        <div className="text-sm font-medium">
+        <div className="text-xl font-medium">
             {displayText}
             <span className="blinking-cursor">|</span>
         </div>
