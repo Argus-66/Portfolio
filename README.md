@@ -40,3 +40,8 @@ for the Star Background
 ```
 npm install @react-three/fiber @react-three/drei maath
 ```
+
+Some of the icons are installed through 
+```
+npm install @heroicons/react
+```

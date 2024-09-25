@@ -1,6 +1,6 @@
 import { HeroSection } from "@/sections/Hero";
 import React from "react";
-//import black from "@assets/video/blackhole.webm";
+import StarsCanvas from "@/components/StarsCanvas";
 
 export const Hero = () => {
     return (
@@ -13,6 +13,9 @@ export const Hero = () => {
             >
                 <source src="./video/blackhole.webm" type="video/webm" />
             </video>
+
+            
+            <StarsCanvas />  {/* Star Background 3D rendering */}
             <HeroSection />
         </div>
     );
