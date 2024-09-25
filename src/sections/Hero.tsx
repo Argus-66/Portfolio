@@ -3,6 +3,7 @@ import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import TextTypeEffect from "../components/TextTypeEffect";
 import React from "react";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 export const HeroSection = () => {
   return (

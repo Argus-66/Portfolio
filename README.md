@@ -44,4 +44,6 @@ npm install @react-three/fiber @react-three/drei maath
 Some of the icons are installed through 
 ```
 npm install @heroicons/react
+and import it like this:
+import { SparklesIcon } from "@heroicons/react/24/solid";
 ```
