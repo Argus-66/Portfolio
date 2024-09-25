@@ -12,7 +12,7 @@
     font-weight: 100;
     font-size: 20px;
     color: #333;
-    animation: blink 0.7s infinite;
+    animation: blink 0.1s infinite;
 }
 
 @keyframes blink {
