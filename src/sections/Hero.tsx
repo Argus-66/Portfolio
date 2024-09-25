@@ -14,9 +14,8 @@ export const HeroSection = () => {
           {/* Left Section - Moving Text and Additional Text */}
           <div className="sm:w-3/5 pr-10">
             <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-              <div>✨</div>
+              <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <TextTypeEffect />
-              <div>✨</div>
             </div>
             <p className="mt-4 text-base text-white leading-relaxed text-justify">
               Hello! I&rsquo;m Ayush H, a passionate computer science student
