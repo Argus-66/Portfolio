@@ -4,6 +4,7 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import TextTypeEffect from "../components/TextTypeEffect";
 import React from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { ArrowDownOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const HeroSection = () => {
   return (
@@ -45,13 +46,18 @@ export const HeroSection = () => {
           totam, eveniet dolorem aliquam ullam in itaque ratione odio, quaerat
           officiis.
         </p>
-        <div className="flex flex-col items-center mt-8">
-          <button className= " inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <div className="flex flex-col items-center mt-8 gap-4">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work!</span>
-            <ArrowDown />
+            <ArrowDown className="size-5" />
           </button>
-          <button>
-            <span>My Resume</span>
+          <button className="inline-flex items-center gap-2 text-gray-900 h-8 px-2.5 rounded-xl"
+            style={{
+              background: "linear-gradient(to right, #030014  10%, #030014  10%, #e9b7ce  100%)",
+            }}
+          >
+            <span className="font-semibold text-white">My Resume!</span>
+            <ArrowDownOnSquareIcon className="size-6 text-white" />
           </button>
         </div>
       </div>
