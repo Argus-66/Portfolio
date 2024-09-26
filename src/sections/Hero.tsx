@@ -36,18 +36,18 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <h1 className="font-serif text-3xl text-center mt-4">
-          building Esceptional User Experiences
+        <h1 className="font-serif text-3xl text-center mt-8 tracking-wide">
+          Building Esceptional User Experiences
         </h1>
-        <p>
+        <p className="mt-4 text-center text-[#ffffffb0]">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           ipsa atque quod commodi. Provident voluptates perferendis est vel sit
           totam, eveniet dolorem aliquam ullam in itaque ratione odio, quaerat
           officiis.
         </p>
-        <div>
-          <button>
-            <span>Explore My Work!</span>
+        <div className="flex flex-col items-center mt-8">
+          <button className= " inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+            <span className="font-semibold">Explore My Work!</span>
             <ArrowDown />
           </button>
           <button>
