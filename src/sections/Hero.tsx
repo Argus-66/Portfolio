@@ -5,6 +5,7 @@ import TextTypeEffect from "../components/TextTypeEffect";
 import React from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { ArrowDownOnSquareIcon } from "@heroicons/react/24/outline";
+import ResumeFile from "../components/ResumeFile";
 
 export const HeroSection = () => {
   return (
@@ -51,14 +52,7 @@ export const HeroSection = () => {
             <span className="font-semibold">Explore My Work!</span>
             <ArrowDown className="size-5" />
           </button>
-          <button className="inline-flex items-center gap-2 text-gray-900 h-8 px-2.5 rounded-xl"
-            style={{
-              background: "linear-gradient(to right, #030014  10%, #030014  10%, #e9b7ce  100%)",
-            }}
-          >
-            <span className="font-semibold text-white">My Resume!</span>
-            <ArrowDownOnSquareIcon className="size-6 text-white" />
-          </button>
+          <ResumeFile />
         </div>
       </div>
     </div>
