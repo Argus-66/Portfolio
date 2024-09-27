@@ -1,10 +1,16 @@
+"use client";
+
 import React from "react";
 import { ArrowDownOnSquareIcon } from "@heroicons/react/24/outline";
 
 const ResumeFile = () => {
+    const handleClick = () => {
+        console.log("Button clicked!");
+    };
+
     return (
         <a
-            href="./Resume/Ayush_Resume.pdf" 
+            href="/Resume/Ayush_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
         >
@@ -13,6 +19,7 @@ const ResumeFile = () => {
                 style={{
                     background: "linear-gradient(to right, #030014  10%, #030014  10%, #e9b7ce  100%)",
                 }}
+                onClick={handleClick}
             >
                 <span className="font-semibold text-white">My Resume!</span>
                 <ArrowDownOnSquareIcon className="size-6 text-white" />
@@ -20,5 +27,6 @@ const ResumeFile = () => {
         </a>
     );
 };
+
 
 export default ResumeFile;
