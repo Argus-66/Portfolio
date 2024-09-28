@@ -15,7 +15,7 @@ const ResumeFile = () => {
             rel="noopener noreferrer"
         >
             <button
-                className="inline-flex items-center gap-2 text-gray-900 h-8 px-2.5 rounded-xl"
+                className="inline-flex items-center gap-2 text-gray-900 h-8 px-2.5 rounded-xl transform transition-transform duration-300 hover:scale-110"
                 style={{
                     background: "linear-gradient(to right, #030014  10%, #030014  10%, #e9b7ce  100%)",
                 }}
