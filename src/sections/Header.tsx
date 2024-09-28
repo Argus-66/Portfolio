@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="fixed top-0 w-full z-20">
+    <div className="fixed top-0 w-full z-2">
       {/* Full-width blurred background */}
       <div className="absolute w-full h-16 bg-[#030014] backdrop-blur-md" />
       

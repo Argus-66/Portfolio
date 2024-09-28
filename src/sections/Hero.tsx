@@ -9,7 +9,7 @@ import ResumeFile from "../components/ResumeFile";
 
 export const HeroSection = () => {
   return (
-    <div className="py-12 z-[1]">
+    <div className="py-32 z-[1]">
       <div className="container">
         {/* {Section for Image and Intro Text} */}
         <div className="flex flex-col sm:flex-row justify-between items-center w-full h-auto py-20">
