@@ -41,11 +41,11 @@ export const HeroSection = () => {
         <h1 className="font-serif text-3xl md:text-5xl text-center mt-[-60px] tracking-wide">
           Building Esceptional User Experiences
         </h1>
-        <p className="mt-4 text-center text-[#ffffffb0]">
+        <p className="mt-4 text-center text-[#ffffffb0] md:text-lg">
           
 I specialize in transforming creative designs into seamless, high-performance web applications tailored to your needs. Let’s collaborate and bring your next project to life!
         </p>
-        <div className="flex flex-col items-center mt-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work!</span>
             <ArrowDown className="size-5" />
