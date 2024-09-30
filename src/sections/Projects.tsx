@@ -47,7 +47,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16">
+    <section className="pb-16 lg:py-24">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
@@ -58,7 +58,7 @@ export const ProjectsSection = () => {
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
           Featured Projects
         </h2>
-        <p className="text-center md:text-lg text-white/60 mt-4 max-w-md mx-auto">
+        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           Discover how I bring ideas to life, creating immersive and engaging digital experiences.
         </p>
 
@@ -87,12 +87,15 @@ export const ProjectsSection = () => {
                 ))}
               </ul>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                   <span>Visit Live Site</span>
                   <ArrowUpRightIcon className="size-4" />
                 </button>
               </a>
-              <Image src={project.image} alt={project.title} className="mt-8 rounded-2xl" />
+              <Image 
+              src={project.image} 
+              alt={project.title} 
+              className="mt-8 rounded-2xl" />
             </div>
           ))}
         </div>
