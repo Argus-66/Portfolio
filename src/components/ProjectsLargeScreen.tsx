@@ -29,7 +29,7 @@ const PortfolioGallery: React.FC = () => {
                 
                 {/* Main Project Display */}
                 <div className="relative mb-8">
-                    <div className="w-full h-[300px] md:h-[400px] lg:h-[700px] overflow-hidden rounded-lg">
+                    <div className="w-full overflow-hidden rounded-lg">
                         <Image
                             src={selectedProject.image}
                             alt={selectedProject.title}
@@ -88,7 +88,7 @@ const PortfolioGallery: React.FC = () => {
                         ))}
                     </ul>
                     <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-                        <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white h-12 lg:h-16 lg:text-xl w-full md:w-auto px-6 lg:px-10 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-6">
+                        <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white h-12 lg:h-16 lg:text-2xl w-full md:w-auto px-6 lg:px-10 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-6">
                             <span>Visit Live Site</span>
                             <ArrowUpRightIcon className="size-4" />
                         </button>

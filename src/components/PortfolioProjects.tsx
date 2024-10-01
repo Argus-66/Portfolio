@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import petukJiLandingPage from "@/assets/images/PetukJi-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
@@ -14,7 +14,7 @@ const PortfolioProjects = [
             { title: "Increased mobile traffic by 35%" },
         ],
         link: "https://petukji.in/",
-        image: darkSaasLandingPage,
+        image: petukJiLandingPage,
     },
     {
         company: "Innovative Co",
