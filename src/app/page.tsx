@@ -1,7 +1,7 @@
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/HeroMaster";
 import { ProjectsSection } from "@/sections/Projects";
-
+import { TapeSection } from "@/sections/Tape";
 
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ProjectsSection />
+      <TapeSection />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import petukJiLandingPage from "@/assets/images/PetukJi-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import bsaLandingPage from "@/assets/images/BSA-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
 
@@ -17,16 +17,16 @@ const PortfolioProjects = [
         image: petukJiLandingPage,
     },
     {
-        company: "Innovative Co",
-        year: "2021",
-        title: "Light Saas Landing Page",
+        company: "Business & Services Association",
+        year: "2024",
+        title: "BSA Club Page",
         results: [
-            { title: "Boosted sales by 20%" },
-            { title: "Expanded customer reach by 35%" },
+            { title: "Satisfied Club Members" },
+            { title: "Expanded Club reach by 35%" },
             { title: "Increased brand awareness by 15%" },
         ],
-        link: "https://youtu.be/7hi5zwO75yc",
-        image: lightSaasLandingPage,
+        link: "https://bsaorg.in/index.html",
+        image: bsaLandingPage,
     },
     {
         company: "Quantum Dynamics",

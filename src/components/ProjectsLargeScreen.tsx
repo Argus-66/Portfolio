@@ -24,12 +24,12 @@ const PortfolioGallery: React.FC = () => {
     };
 
     return (
-        <div className="bg-gray-900 rounded-3xl relative   min-h-screen p-4 md:p-8 mt-16">
+        <div className="bg-gray-900 rounded-3xl relative min-h-screen p-4 md:p-4 mt-16">
             <div className="max-w-7xl mx-auto z-[1]">
                 
                 {/* Main Project Display */}
                 <div className="relative mb-8">
-                    <div className="w-full overflow-hidden rounded-lg">
+                    <div className="w-full overflow-hidden rounded-3xl">
                         <Image
                             src={selectedProject.image}
                             alt={selectedProject.title}
