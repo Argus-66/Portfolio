@@ -8,26 +8,26 @@ import GithubIcon from "@/assets/icons/github.svg";
 export const toolboxItems = [
     {
         title: "JavaScript",
-        icon: <JavascriptIcon />,
+        iconType: JavascriptIcon,
     },
     {
         title: "HTML5",
-        icon: <HTMLIcon />,
+        iconType: HTMLIcon,
     },
     {
         title: "CSS3",
-        icon: <CssIcon />,
+        iconType: CssIcon,
     },
     {
         title: "React",
-        icon: <Reacticon />,
+        iconType: Reacticon,
     },
     {
         title: "Chrome",
-        icon: <ChromeIcon />,
+        iconType: ChromeIcon,
     },
     {
         title: "Github",
-        icon: <GithubIcon />,
+        iconType: GithubIcon,
     },
 ];
