@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-4">
       <div className="container">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
+          <p className="uppercase font-semibold md:text-2xl tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
             Real-world Results
           </p>
         </div>
