@@ -5,7 +5,7 @@ import ProjectsLargeScreen from "../components/ProjectsLargeScreen";
 export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-4">
-      <div className="container">
+      <div className="max-w-full md:max-w-4xl lg:max-w-[90rem] mx-auto">
         <div className="flex justify-center">
           <p className="uppercase font-semibold md:text-2xl tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
             Real-world Results
