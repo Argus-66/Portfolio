@@ -5,6 +5,9 @@ import bookImage from "@/assets/images/book-cover.png"
 import Image from "next/image";
 import { toolboxItems } from "@/components/TechStack";
 import { TechIcon } from "@/components/TechIcon";
+import mapImage from "@/assets/images/map.jpg"
+import smileMemoji from "@/assets/images/memoji-smile.png"
+import { hobbies } from "@/components/Hobbies";
 
 export const AboutSection = () => {
   return (
@@ -43,10 +46,24 @@ export const AboutSection = () => {
         <Card>
           <div>
             <StarIcon />
-            <h3>My Toolbox</h3>
-            <p>Explore the Technologies and Tools use to craft Exceptional Digital Experiences.</p>
+            <h3>Beyond The Code</h3>
+            <p>Explore my Interests and Hobbies beyond the Digital Realm.</p>
+          </div>
+          <div>
+            {hobbies.map(hobby => (
+              <div key={hobby.title}>
+                <span>{hobby.title}</span>
+                <span>{hobby.emoji}</span>
+              </div>
+            ))}
           </div>
         </Card>
+
+        <Card>
+          <Image src={mapImage} alt= "map" />
+          <Image src={smileMemoji} alt= "smiling emoji" />
+        </Card>
+
       </div>
     </div>
   )
