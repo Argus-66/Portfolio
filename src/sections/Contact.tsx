@@ -1,3 +1,10 @@
+
+
+
 export const ContactSection = () => {
-  return <div>Contact Section</div>;
+  return (
+    <div>
+      <h2>Let's Create Something Amazing Together</h2>
+    </div>
+  )
 };

@@ -16,37 +16,42 @@ export const AboutSection = () => {
         <SectionHeader
           eyebrow="About Me"
           title="A Glimpse Into My World"
-          description="Learn more about I am, what I do, and what Inspires Me."
+          description="Learn more about who I am, what I do, and what Inspires Me."
         />
 
         <div className="mt-20 flex flex-col gap-8">
-          <Card className="h-[320px]">
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+          <Card className="h-[320px] md:col-span-2 lg:col-span-1">
             <CardHeader
               title="My Reads"
               description="Explore the books shaping my perspections."
             />
 
-            <div className="w-40 mx-auto mt-8 ">
+            <div className="w-40 mx-auto mt-2 md:mt-0">
               <Image src={bookImage} alt="Book cover" />
             </div>
           </Card>
 
-          <Card className="h-[320px] p-0 ">
+
+          <Card className="h-[320px] md:col-span-3 lg:col-span-2">
             <CardHeader
               title="My Toolbox"
               description="Discover the Technologies and Tools I Leverage to Build Innovative Solutions."
-              className="px-6 pt-6"
+              className=""
             />
 
-            <ToolboxItems items={toolboxItems} className="mt-6" />
+            <ToolboxItems items={toolboxItems} className="" />
             <ToolboxItems
               items={toolboxItems}
               className="mt-6"
               itemsWraperClassName="-translate-x-1/2"
             />
           </Card>
+          </div>
 
-          <Card className="h-[320px] p-0 flex flex-col">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+          <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
             <CardHeader
               title="Beyond The Code"
               description="Explore my Interests and Hobbies beyond the Digital Realm."
@@ -63,7 +68,7 @@ export const AboutSection = () => {
                     top: hobby.top,
                   }}
                 >
-                  <span className="foint-medium text-gray-950">
+                  <span className="font-medium text-gray-950 lg:text-lg">
                     {hobby.title}
                   </span>
                   <span>
@@ -75,7 +80,7 @@ export const AboutSection = () => {
           </Card>
 
 
-          <Card className="h-[320px] p-0 relative">
+          <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
             <Image
               src={mapImage}
               alt="map"
@@ -89,6 +94,9 @@ export const AboutSection = () => {
               />
             </div>
           </Card>
+          </div>
+
+
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ export const TestimonialsSection = () => {
           }}>
           <div className=" flex gap-8 flex-none">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="max-w-[23rem] md:max-w-md md:p-8 lg:max-w-lg">
+              <Card key={testimonial.name} className="max-w-[23rem] md:max-w-md p-6 md:p-8 lg:max-w-lg">
                 <div className="flex gap-4 items-center">
                   <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 lg:size-20">
 
