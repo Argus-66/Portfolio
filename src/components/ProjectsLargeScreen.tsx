@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 import PortfolioProjects from './PortfolioProjects';
-import grainImage from "@/assets/images/grain.jpg";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
