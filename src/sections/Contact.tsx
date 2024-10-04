@@ -3,10 +3,15 @@ import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-14">
+    <div className="py-16 pt-12">
       <div className="max-w-[90%] md:max-w-4xl lg:max-w-[90rem] mx-auto">
-        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl  text-center relative">
-          <div className="absolute inset-0"></div>
+        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl  text-center relative overflow-hidden z-0">
+          <div 
+          className="absolute inset-0 opacity-5 -z-1"
+          style={{
+            backgroundImage: `url(${grainImage.src})`,
+          }}
+          ></div>
           <h2 className="font-serif text-2xl ">Let's Create Something Amazing Together</h2>
           <p className="text-sm mt-2 ">
             Passionate About Turning Visions into Reality? Let’s Connect and Discuss How I Can Help You Achieve Your Goals.
