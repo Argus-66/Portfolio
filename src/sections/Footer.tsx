@@ -25,7 +25,8 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="relative -z[-10] overflow-x-clip">
+      <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-400/40 [maskImage:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>
       <div className="max-w-[90%] md:max-w-4xl lg:max-w-[90rem] mx-auto">
         <div className="border-t border-white/15 py-6 text-sm flex flex-col items-center gap-8">
           <div className="text-white/40 ">
