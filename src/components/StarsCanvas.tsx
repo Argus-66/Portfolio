@@ -8,11 +8,14 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const StarBackground = (props: any) => {
     const ref = useRef<any>();
-    const sphere = useMemo(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }), []);
+    
+    // Reduce the number of points to improve performance
+    const sphere = useMemo(() => random.inSphere(new Float32Array(1000), { radius: 1.2 }), []);  // Reduced from 5000 to 2000
 
     useFrame((state, delta) => {
-        ref.current.rotation.x -= delta / 10;
-        ref.current.rotation.y -= delta / 15;
+        // Optional: Reduce the rotation speed for better performance
+        ref.current.rotation.x -= delta / 20; // Slower rotation
+        ref.current.rotation.y -= delta / 30; // Slower rotation
     });
 
     return (
@@ -21,7 +24,7 @@ const StarBackground = (props: any) => {
                 <PointMaterial
                     transparent
                     color="#fff"
-                    size={0.001}  // Adjusted size for performance
+                    size={0.002}  // Slightly larger size for better visibility without increasing performance cost much
                     sizeAttenuation
                     depthWrite={false}
                 />
@@ -32,8 +35,8 @@ const StarBackground = (props: any) => {
 
 const StarsCanvas = () => (
     <div className="w-full h-auto fixed inset-0 z-[0]">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-            <Suspense fallback={<div>Loading...</div>}>  {/* Optional loading fallback */}
+        <Canvas camera={{ position: [0, 0, 1] }} >
+            <Suspense fallback={<div>Loading...</div>}>
                 <StarBackground />
             </Suspense>
         </Canvas>
