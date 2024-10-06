@@ -6,33 +6,27 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
 export const testimonials = [
     {
-        name: "Alex Turner",
-        position: "Marketing Manager @ TechStartups",
-        text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+        name: "Subhash Rana",
+        position: "CEO @ PetukJi Private Limited",
+        text: "Ayush consistently exceeded expectations throughout his internship. His technical skills, attention to detail, and problem-solving mindset made a significant contribution to the success of our projects. He approached every challenge with enthusiasm and a strong work ethic, making him an invaluable member of the team.",
         avatar: memojiAvatar1,
     },
     {
-        name: "Olivia Green",
-        position: "Head of Design @ GreenLeaf",
-        text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-        avatar: memojiAvatar2,
+        name: "Subhash Rana",
+        position: "CEO @ PetukJi Private Limited ",
+        text: "Ayush was highly appreciated for his outstanding work during Demo Day, receiving applause from over 100 attendees for more than two minutes. His expertise and execution were nothing short of excellent, making a lasting impact on the audience and the entire event!",
+        avatar: memojiAvatar1,
     },
     {
-        name: "Daniel White",
-        position: "CEO @ InnovateCo",
-        text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+        name: "Subham Kumar",
+        position: "Web Developer @ PetukJi",
+        text: "Working alongside Ayush was an absolute pleasure. Together, we transformed our ideas into fully functional websites, and his expertise in frontend development brought our shared designs to life in ways we had not imagined. The end result exceeded both of our expectations, thanks to our seamless teamwork and Ayush's attention to detail.",
         avatar: memojiAvatar3,
     },
     {
-        name: "Emily Carter",
-        position: "Product Manager @ GlobalTech",
-        text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+        name: "Eshwar Nagaraj",
+        position: "Founder @ GrapplTech",
+        text: "Throughout the internship, Argus consistently demonstrated excellent attention to detail, enthusiasm, and expertise in various aspects of software development. His dedication to delivering high-quality work and his ability to quickly grasp complex concepts made him an exceptional asset to the team.",
         avatar: memojiAvatar4,
-    },
-    {
-        name: "Michael Brown",
-        position: "Director of IT @ MegaCorp",
-        text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-        avatar: memojiAvatar5,
     },
 ];
