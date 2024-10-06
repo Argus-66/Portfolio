@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,33 +11,41 @@ export const Header = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
+    const getActiveSection = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.scrollY;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const sectionTop = section.offsetTop - 100; // Adjust this value as needed
+        if (scrollPosition >= sectionTop) {
+          return section.id;
+        }
+      }
+
+      return "hero"; // Default to "hero" if no section is found
+    };
+
+    const updateActiveSection = () => {
+      const currentSection = getActiveSection();
+      setActiveSection(currentSection);
+    };
+
+    // Set initial active section
+    updateActiveSection();
+
+    // Add event listeners
     window.addEventListener("scroll", handleScroll);
-
-    // Create an Intersection Observer to track sections
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    window.addEventListener("scroll", updateActiveSection);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      sections.forEach((section) => observer.unobserve(section));
+      window.removeEventListener("scroll", updateActiveSection);
     };
   }, []);
 
   return (
-    <div className={`fixed top-0 w-full transition-all duration-300 ${isScrolled ? "z-[10]" : "z-[2]"}`}>
+    <div className={`fixed top-0 w-full transition-all duration-300 z-[10]`}>
       <div className={`absolute top-0 w-full h-16 bg-[#030014] ${isScrolled ? "backdrop-blur-0" : "backdrop-blur-md"} transition-all duration-300`}></div>
 
       <div className="relative flex justify-center items-center h-16">
@@ -51,3 +59,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
