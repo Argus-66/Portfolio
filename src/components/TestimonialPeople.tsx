@@ -26,7 +26,7 @@ export const testimonials = [
     {
         name: "Eshwar Nagaraj",
         position: "Founder @ GrapplTech",
-        text: "Throughout the internship, Argus consistently demonstrated excellent attention to detail, enthusiasm, and expertise in various aspects of software development. His dedication to delivering high-quality work and his ability to quickly grasp complex concepts made him an exceptional asset to the team.",
+        text: "Throughout the internship, Ayush consistently demonstrated excellent attention to detail, enthusiasm, and expertise in various aspects of software development. His dedication to delivering high-quality work and his ability to quickly grasp complex concepts made him an exceptional asset to the team.",
         avatar: memojiAvatar4,
     },
 ];
