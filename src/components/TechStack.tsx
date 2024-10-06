@@ -9,25 +9,31 @@ export const toolboxItems = [
     {
         title: "JavaScript",
         iconType: JavascriptIcon,
+        id: "javascript", // Unique ID for the item
     },
     {
         title: "HTML5",
         iconType: HTMLIcon,
+        id: "html5", // Unique ID for the item
     },
     {
         title: "CSS3",
         iconType: CssIcon,
+        id: "css3", // Unique ID for the item
     },
     {
         title: "React",
         iconType: Reacticon,
+        id: "react", // Unique ID for the item
     },
     {
         title: "Chrome",
         iconType: ChromeIcon,
+        id: "chrome", // Unique ID for the item
     },
     {
         title: "Github",
         iconType: GithubIcon,
+        id: "github", // Unique ID for the item
     },
 ];
