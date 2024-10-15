@@ -3,28 +3,30 @@ import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <div className="py-16 pt-12 lg:py-24 lg:pt-20 z">
       <div className="max-w-[90%] md:max-w-4xl lg:max-w-[90rem] mx-auto">
-        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl  text-center md:text-left relative overflow-hidden z-0">
+        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl  text-center md:text-left relative overflow-hidden z-[10]">
           <div
-            className="absolute inset-0 opacity-5 -z-1"
+            className="absolute inset-0 opacity-5 -z[-1]"
             style={{
               backgroundImage: `url(${grainImage.src})`,
             }}
           ></div>
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center z-[10]">
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl">
+              <h2 className="font-serif text-2xl md:text-3xl z-[10]">
                 Let's Create Something Amazing Together</h2>
-              <p className="text-sm mt-2 md:text-base">
+              <p className="text-sm mt-2 md:text-base z-[10]">
                 Passionate About Turning Visions into Reality? Let’s Connect and Discuss How I Can Help You Achieve Your Goals.
               </p>
             </div>
             <div>
-            <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
-              <span className="font-semibold">Contact Me</span>
-              <ArrowUpRighticon className="size-4" />
-            </button>
+              <a href="https://www.linkedin.com/in/ayush-h-541948252/" target="_blank" rel="noopener noreferrer">
+                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+                  <span className="font-semibold z-[10]">Contact Me</span>
+                  <ArrowUpRighticon className="size-4" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
