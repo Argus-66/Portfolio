@@ -1,6 +1,6 @@
 import petukJiLandingPage from "@/assets/images/PetukJi-landing-page.png";
 import bsaLandingPage from "@/assets/images/BSA-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import weatherLandingPage from "@/assets/images/Weather.png";
 
 
 const PortfolioProjects = [
@@ -38,7 +38,7 @@ const PortfolioProjects = [
             { title: "Increased mobile traffic by 35%" },
         ],
         link: "https://youtu.be/Z7I5uSRHMHg",
-        image: aiStartupLandingPage,
+        image: weatherLandingPage,
     },
 ];
 
