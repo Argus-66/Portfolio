@@ -1,6 +1,8 @@
 import petukJiLandingPage from "@/assets/images/PetukJi-landing-page.png";
 import bsaLandingPage from "@/assets/images/BSA-landing-page.png";
 import weatherLandingPage from "@/assets/images/Weather.png";
+import docCureLandingPage from "@/assets/images/DocCure-landing-page.png";
+import foodFinderLandingPage from "@/assets/images/FoodFinder-landing-page.png";
 
 
 const PortfolioProjects = [
@@ -17,6 +19,30 @@ const PortfolioProjects = [
         image: petukJiLandingPage,
     },
     {
+        company: "DocCure",
+        year: "2024",
+        title: "Healthcare Platform",
+        results: [
+            { title: "Smooth appointment booking system" },
+            { title: "Efficient healthcare management" },
+            { title: "User-friendly web interface" },
+        ],
+        link: "https://doc-cures-user.vercel.app/",
+        image: docCureLandingPage,
+    },
+    {
+        company: "FoodFinder",
+        year: "2024",
+        title: "Food Delivery Application",
+        results: [
+            { title: "Seamless cart management" },
+            { title: "Secure user authentication" },
+            { title: "Efficient restaurant connections" },
+        ],
+        link: "https://food-finder-lime.vercel.app/",
+        image: foodFinderLandingPage,
+    },
+    {
         company: "Business & Services Association",
         year: "2024",
         title: "BSA Club Page",
@@ -31,7 +57,7 @@ const PortfolioProjects = [
     {
         company: "Weather API Project",
         year: "2024",
-        title: "SkyScope: Your Local Weather at a GlanceAI Startup Landing Page",
+        title: "SkyScope: Your Local Weather at a Glance",
         results: [
             { title: "Real-time Weather Updates" },
             { title: "Forecast Insight" },

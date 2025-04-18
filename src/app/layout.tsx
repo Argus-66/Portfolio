@@ -11,8 +11,10 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Ayush H | Full Stack Developer & UI/UX Enthusiast",
+  description: "Professional portfolio showcasing my expertise in Full Stack Development, MERN stack, UI/UX design, and more. Explore my featured projects including DocCure, FoodFinder, and others.",
+  keywords: "Full Stack Developer, MERN Stack, UI/UX Design, Web Development, React, Node.js, Portfolio",
+  authors: [{ name: "Ayush H", url: "https://www.linkedin.com/in/ayush-h-541948252/" }],
 };
 
 export default function RootLayout({

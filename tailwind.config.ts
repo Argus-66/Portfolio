@@ -26,8 +26,14 @@ const config: Config = {
         serif: 'var(--font-serif)',
       },
       animation: {
-        "move-left": 'move-left 1s linear infinite',
-        "move-right": 'move-right 1s linear infinite',
+        "move-left": 'move-left 15s linear infinite',
+        "move-right": 'move-right 15s linear infinite',
+        "blink": "blink 1s step-end infinite",
+        "orbit": "orbit 60s linear infinite",
+        "orbit-reverse": "orbit-reverse 60s linear infinite",
+        "float": "float 6s ease-in-out infinite",
+        "cosmic-orbit": "cosmic-orbit 60s linear infinite",
+        "cosmic-orbit-reverse": "cosmic-orbit-reverse 60s linear infinite",
       },
       keyframes: {
         "move-left": {
@@ -46,7 +52,42 @@ const config: Config = {
             transform: "translateX(0%)",
           },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" }
+        },
+        orbit: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
+        },
+        "orbit-reverse": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" }
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" }
+        },
+        "cosmic-orbit": {
+          "0%": { transform: "rotate(0deg) translateX(225px) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(225px) rotate(-360deg)" }
+        },
+        "cosmic-orbit-reverse": {
+          "0%": { transform: "rotate(0deg) translateX(225px) rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg) translateX(225px) rotate(360deg)" }
+        }
       },
+      rotate: {
+        '30': '30deg',
+        '60': '60deg',
+        '75': '75deg',
+      },
+      scale: {
+        '25': '0.25',
+        '30': '0.3',
+        '50': '0.5',
+        '70': '0.7',
+      }
     },
   },
   plugins: [],
