@@ -7,7 +7,7 @@ export const AchievementsSection = () => {
   const achievements = [
     {
       title: "Smart India Hackathon 2024 Winner",
-      description: "Led a team of 5 members to victory in the world's largest hackathon under the Ministry of Ayush at IIT Tirupati.",
+      description: "Led a team of 6 members to victory in the world's largest hackathon under the Ministry of Ayush at IIT Tirupati.",
       icon: <Trophy className="size-10 md:size-12 text-yellow-400" />,
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7273401249566183424/",
       details: [
